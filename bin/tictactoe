@@ -1,3 +1,12 @@
 #!/usr/bin/env ruby
 
 require_relative '../config/environment'
+puts "WELCOME TO TICTACTOE"
+@board.display
+puts "
+      For two players enter '2'
+      To play against the computer enter '1'
+      To watch the computer play itself press '0'"
+current = Game.new
+current.cli_player_choices
+current.play
